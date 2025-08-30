@@ -1,0 +1,89 @@
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #00e5ff;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #00e5ff;
+  transition: all 0.3s ease;
+  z-index: 9999;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Show / Hide */
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+.back-to-top.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Hover Effect */
+.back-to-top:hover {
+  background: black;
+  color: #00e5ff;
+  box-shadow: 0 0 25px #00e5ff;
+}
+
+/* ========================= */
+/* 📱 Responsive Media Queries */
+/* ========================= */
+
+/* Tablets & small desktops (1024px) */
+@media (max-width: 1024px) {
+  .back-to-top {
+    bottom: 25px;
+    right: 25px;
+    padding: 11px;
+    font-size: 18px;
+  }
+}
+
+/* Medium tablets (900px) */
+@media (max-width: 900px) {
+  .back-to-top {
+    bottom: 22px;
+    right: 22px;
+    padding: 10px;
+    font-size: 17px;
+  }
+}
+
+/* Tablets (768px) */
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    padding: 9px;
+    font-size: 16px;
+  }
+}
+
+/* Large phones (600px) */
+@media (max-width: 600px) {
+  .back-to-top {
+    bottom: 18px;
+    right: 18px;
+    padding: 8px;
+    font-size: 15px;
+  }
+}
+
+/* Small phones (480px) */
+@media (max-width: 480px) {
+  .back-to-top {
+    bottom: 15px;
+    right: 15px;
+    padding: 7px;
+    font-size: 14px;
+  }
+}

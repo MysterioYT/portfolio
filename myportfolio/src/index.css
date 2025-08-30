@@ -1,0 +1,17 @@
+html {
+  scroll-behavior: smooth;
+}
+/* === Toastify Custom Theme === */
+.Toastify__toast-container {
+  position: fixed !important;
+  z-index: 99999 !important;
+  pointer-events: none;
+}
+
+.Toastify__toast {
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.5rem;
+  pointer-events: auto;
+}

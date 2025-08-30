@@ -1,0 +1,317 @@
+/* ================== PROJECTS SECTION ================== */
+.projects-section {
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center */
+  align-items: center; /* horizontally center */
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #000; /* pure black */
+  color: #fff;
+  position: relative;
+  box-shadow: inset 0 0 60px rgba(34, 211, 238, 0.15); /* soft glowing edges */
+}
+
+.projects-heading {
+  font-size: 2.8rem;
+  margin-bottom: 2.5rem;
+  color: #22d3ee;
+  text-shadow: 0 0 20px rgba(34, 211, 238, 0.9),
+               0 0 35px rgba(34, 211, 238, 0.5); /* neon glow */
+}
+
+/* ================== GRID ================== */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* keep them centered */
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 1200px; /* keep grid contained */
+}
+
+/* ================== PROJECT CARD ================== */
+.project-card {
+  background: #111;
+  padding: 2rem 1.2rem;
+  border-radius: 20px;
+  width: 320px; /* wider */
+  min-height: 440px; /* slightly taller */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.2);
+}
+
+.project-card:hover {
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 0 30px rgba(34, 211, 238, 0.9),
+              0 0 60px rgba(34, 211, 238, 0.4); /* glowing 3D effect */
+}
+
+/* ================== IMAGE ================== */
+.project-img-box {
+  width: 100%;
+  height: 200px;
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(34, 211, 238, 0.05);
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================== TEXT ================== */
+.project-title {
+  margin: 1rem 0;
+  color: #22d3ee;
+  font-size: 1.4rem;
+  text-shadow: 0 0 10px rgba(34, 211, 238, 0.8);
+}
+
+.project-desc {
+  font-size: 0.95rem;
+  color: #bbb;
+  flex-grow: 1;
+}
+
+.project-tags {
+  margin: 1rem 0;
+}
+
+.tag {
+  display: inline-block;
+  margin: 0.3rem;
+  padding: 0.3rem 0.7rem;
+  background: rgba(34, 211, 238, 0.2);
+  color: #22d3ee;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+
+/* ================== BUTTON ================== */
+.view-more-btn {
+  background: transparent;
+  border: 2px solid #22d3ee;
+  color: #22d3ee;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.view-more-btn:hover {
+  background: #22d3ee;
+  color: #000;
+  box-shadow: 0 0 15px #22d3ee;
+}
+
+/* ================== MODAL ================== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow-y: auto;
+}
+
+.modal-content {
+  background: #111;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 85%;
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 40px rgba(34, 211, 238, 0.7);
+}
+
+.modal-img-box {
+  width: 100%;
+  height: 300px;
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(34, 211, 238, 0.05);
+  box-shadow: 0 0 25px rgba(34, 211, 238, 0.4);
+}
+
+.modal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.modal-content h2 {
+  color: #22d3ee;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 15px rgba(34, 211, 238, 0.9);
+}
+
+.modal-content p {
+  color: #ddd;
+  margin-bottom: 2rem;
+}
+
+/* ================== MODAL ACTIONS ================== */
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-btn {
+  background: #22d3ee;
+  color: #000;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.modal-btn:hover {
+  background: #0ef;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #22d3ee;
+}
+
+
+/* ================== CLOSE BUTTON ================== */
+.modal-close-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #22d3ee; /* Theme cyan */
+  color: #000;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.modal-close-btn:hover {
+  background-color: #0ea5e9; /* darker cyan */
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #22d3ee;
+}
+/* ================== RESPONSIVE ================== */
+
+/* 📌 Large Tablets / Small Desktops (1024px) */
+@media (max-width: 1024px) {
+  .projects-heading {
+    font-size: 2.4rem;
+  }
+  .projects-grid {
+    gap: 2rem;
+  }
+  .project-card {
+    width: 300px;
+    min-height: 420px;
+  }
+}
+
+/* 📌 Medium Tablets (900px) */
+@media (max-width: 900px) {
+  .projects-heading {
+    font-size: 2.2rem;
+  }
+  .projects-grid {
+    gap: 1.8rem;
+  }
+  .project-card {
+    width: 280px;
+    min-height: 400px;
+  }
+}
+
+/* 📌 Tablets (768px) */
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 3rem 1.5rem;
+  }
+  .projects-heading {
+    font-size: 2rem;
+  }
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-card {
+    width: 90%;
+    max-width: 500px;
+    min-height: auto;
+  }
+}
+
+/* 📌 Small Tablets / Large Phones (600px) */
+@media (max-width: 600px) {
+  .projects-section {
+    padding: 2.5rem 1rem;
+  }
+  .projects-heading {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  .project-card {
+    width: 95%;
+    padding: 1.5rem 1rem;
+  }
+  .project-title {
+    font-size: 1.2rem;
+  }
+  .project-desc {
+    font-size: 0.9rem;
+  }
+}
+
+/* 📌 Phones (480px) */
+@media (max-width: 480px) {
+  .projects-section {
+    padding: 2rem 1rem;
+  }
+  .projects-heading {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  .project-card {
+    width: 100%;
+    padding: 1.2rem;
+    border-radius: 15px;
+  }
+  .project-img-box {
+    height: 180px;
+  }
+  .project-title {
+    font-size: 1.1rem;
+  }
+  .project-desc {
+    font-size: 0.85rem;
+  }
+  .view-more-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}

@@ -1,0 +1,342 @@
+/* === About Section Styling === */
+.about-section {
+  background: #111;
+  padding: 60px 20px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  height: 900px;
+  width: 100%;
+  align-items: center;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* === Left Side (Profile + Skills) === */
+.about-left {
+  flex: 1;
+  min-width: 300px;
+  height: 600px;
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4),
+              0 0 30px rgba(0, 255, 255, 0.2);
+  transition: 0.3s;
+}
+
+.about-left:hover {
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.7),
+              0 0 50px rgba(0, 255, 255, 0.3);
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 2px solid cyan;
+  box-shadow: 0 0 20px cyan;
+}
+/* === Skills Progress Bars === */
+.skills {
+  margin-top: 20px;
+  text-align: left;
+}
+h3{
+  text-align: center;
+}
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill span {
+  display: block;
+  margin-bottom: 6px;
+  color: cyan;
+  font-weight: 100;
+}
+
+.skill-bar {
+  height: 10px;
+  background: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 5px;
+  box-shadow: inset 2px 2px 5px #000
+}
+
+.skill-fill {
+height: 100%;
+  background: linear-gradient(90deg, cyan, #00ffffcc);
+  border-radius: 10px;
+  box-shadow: 0 0 10px cyan, 0 0 20px cyan;
+  transition: width 1s ease-in-out;
+}
+
+/* Bar Animation */
+@keyframes growBar {
+  from { width: 0; }
+  to { width: var(--width, 100%); }
+}
+
+
+/* === Right Side (About Info) === */
+.about-right {
+  flex: 2;
+  min-width: 350px;
+}
+
+.about-right h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.about-right h2 span {
+  color: cyan;
+}
+
+.about-right p {
+  margin-bottom: 25px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.about-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+}
+
+.about-right ul li {
+  background: #1e1e1e;
+  margin-bottom: 10px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #ddd;
+  transition: 0.3s;
+}
+
+.about-right ul li:hover {
+  background: #2a2a2a;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* === LinkedIn Button === */
+.linkedin-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: cyan;
+  color: #111;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.linkedin-btn:hover {
+  background: #00ffffcc;
+  box-shadow: 0 0 20px cyan;
+  transform: translateY(-2px);
+}
+
+/* === Responsive === */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+     height: auto;
+  }
+  
+  .about-left, .about-right {
+    width: 100%;
+  }
+  .about-right h2{
+    text-align: center;
+  }
+    .linkedin-btn {
+    display: block;
+    margin: 20px auto 0; /* auto centers horizontally */
+    text-align: center;
+    width: fit-content;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 40px 15px;
+    height: auto; /* remove fixed height */
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .about-left {
+    width: 90%;
+    height: auto;
+  }
+
+  .about-right {
+    width: 90%;
+  }
+
+  .about-right h2{
+    text-align: center;
+  }
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* For normal tablets */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 30px 10px;
+     height: auto;
+  }
+
+  .about-right h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .about-right p {
+    font-size: 14px;
+  }
+
+  .about-right ul li {
+    font-size: 14px;
+    padding: 10px;
+  }
+   .about-right h2{
+    text-align: center;
+  }
+
+   .linkedin-btn {
+    display: block;
+    margin: 20px auto 0; /* auto centers horizontally */
+    text-align: center;
+    width: fit-content;
+  }
+}
+
+/* For phones */
+@media (max-width: 480px) {
+  .about-left {
+    padding: 15px;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .skill span {
+    font-size: 13px;
+  }
+
+  .skill-bar {
+    height: 8px;
+  }
+
+  .about-right h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .about-right p {
+    font-size: 13px;
+  }
+
+  .about-right ul li {
+    font-size: 13px;
+  }
+
+  .linkedin-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+   .linkedin-btn {
+    display: block;
+    margin: 20px auto 0; /* auto centers horizontally */
+    text-align: center;
+    width: fit-content;
+  }
+}
+/* For medium phones / small tablets */
+@media (max-width: 600px) {
+  .about-section {
+    padding: 25px 12px;
+    height: auto; /* remove fixed height for flexibility */
+  }
+
+  .profile-img {
+    width: 130px;
+    height: 130px;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+
+  .skill span {
+    font-size: 14px;
+  }
+
+  .skill-bar {
+    height: 9px;
+  }
+
+  .about-right h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .about-right p {
+    font-size: 13.5px;
+    line-height: 1.5;
+  }
+
+  .about-right ul li {
+    font-size: 13.5px;
+    padding: 10px 12px;
+  }
+
+  .linkedin-btn {
+    padding: 9px 18px;
+    font-size: 14px;
+    display: block;
+    margin: 20px auto 0;
+    text-align: center;
+    width: fit-content;
+  }
+}
+
+
+
+@keyframes navSlide {
+  0% { opacity: 0; transform: translateY(60px); }
+  50% { opacity: 0.5; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+#about.nav-triggered-animation {
+  animation: navSlide 1.3s ease-in-out;
+}

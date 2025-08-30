@@ -1,0 +1,146 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  width: 100%;
+  min-height: 100vh;
+  background: black;
+  color: white;
+  flex-wrap: wrap; /* wraps for smaller devices */
+  width: 100%;
+}
+
+.box-1 {
+  flex: 1;
+  padding: 1rem;
+  min-width: 300px;
+}
+
+.home-h2 {
+  font-size: 2rem;
+  color: #00e5ff;
+}
+
+.home-h1 {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+}
+
+.home-h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.box-1-logo {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.box-1-logo a {
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.box-1-logo a:hover {
+  transform: scale(1.2);
+  color: #00e5ff;
+}
+
+.typing-effect {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #fff;
+}
+
+.box-2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 280px;
+  margin-top: 2rem;
+}
+
+.box-2 img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #00e5ff;
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.8),
+              0 0 50px rgba(0, 229, 255, 0.6),
+              0 0 75px rgba(0, 229, 255, 0.4);
+  transition: 0.3s ease-in-out;
+}
+
+.box-2 img:hover {
+  box-shadow: 0 0 40px rgba(0, 229, 255, 1), 
+              0 0 80px rgba(0, 229, 255, 0.9),
+              0 0 120px rgba(0, 229, 255, 0.7);
+  transform: scale(1.05);
+}
+
+/* 🔹 Universal Responsive Adjustments */
+
+/* Laptops & large tablets (~1200px down) */
+@media (max-width: 1200px) {
+  .home-h1 { font-size: 2.7rem; }
+  .home-h3 { font-size: 1.1rem; }
+  .box-2 img { width: 320px; height: 320px; }
+}
+
+/* ✅ 1024px (common laptops) */
+@media (max-width: 1024px) {
+  .home { flex-direction: column; text-align: center; }
+  .home-h1 { font-size: 2.5rem; }
+  .home-h3 { font-size: 1rem; }
+  .box-2 img { width: 280px; height: 280px; }
+  .box-1-logo { justify-content: center; }
+}
+
+/* ✅ 900px (tablets landscape) */
+@media (max-width: 900px) {
+  .home-h1 { font-size: 2.2rem; }
+  .home-h3 { font-size: 1rem; }
+  .box-2 img { width: 260px; height: 260px; }
+}
+
+/* ✅ 800px (tablets portrait) */
+@media (max-width: 800px) {
+  .home-h2 { font-size: 1.6rem; }
+  .home-h1 { font-size: 2rem; }
+  .typing-effect { font-size: 1.3rem; }
+  .box-2 img { width: 240px; height: 240px; }
+}
+
+/* ✅ 600px (small tablets & big phones) */
+@media (max-width: 600px) {
+  .home-h2 { font-size: 1.4rem; }
+  .home-h1 { font-size: 1.8rem; }
+  .home-h3 { font-size: 0.95rem; }
+  .typing-effect { font-size: 1.2rem; }
+  .box-2 img { width: 200px; height: 200px; }
+}
+
+/* ✅ 480px (phones) */
+@media (max-width: 480px) {
+  .home { padding: 1rem; }
+  .home-h2 { font-size: 1.2rem; }
+  .home-h1 { font-size: 1.5rem; }
+  .home-h3 { font-size: 0.85rem; }
+  .typing-effect { font-size: 1rem; }
+  .box-2 img { width: 160px; height: 160px; }
+  .box-1-logo { gap: 0.8rem; }
+  .box-1-logo a svg { width: 24px; height: 24px; }
+}
+
+/* ✅ Extra small phones (≤360px) */
+@media (max-width: 360px) {
+  .home-h1 { font-size: 1.3rem; }
+  .typing-effect { font-size: 0.9rem; }
+  .box-2 img { width: 140px; height: 140px; }
+}
