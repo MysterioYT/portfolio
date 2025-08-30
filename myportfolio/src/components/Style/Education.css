@@ -491,3 +491,8 @@
   .cert-btn { font-size: 0.85rem; padding: 0.45rem 1rem; }
   .mySwiper { height: 500px; }
 }
+@media (max-width: 624px) {
+  .cert-btn {
+    display: none !important;
+  }
+}
