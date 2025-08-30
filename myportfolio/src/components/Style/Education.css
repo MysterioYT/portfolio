@@ -434,3 +434,60 @@
     height: 380px;
   }
 }
+/* ===================== Extra Fine-Grained Responsiveness ===================== */
+
+/* 200px – 250px */
+@media (max-width: 250px) {
+  .certificate-card { width: 98%; padding: 0.5rem; }
+  .cert-image { height: 150px; }
+  .certificate-card h3 { font-size: 0.75rem; }
+  .certificate-card p { font-size: 0.65rem; }
+  .cert-btn { font-size: 0.65rem; padding: 0.25rem 0.6rem; }
+  .mySwiper { height: 350px; }
+}
+
+/* 250px – 300px */
+@media (min-width: 250px) and (max-width: 300px) {
+  .certificate-card { width: 98%; padding: 0.6rem; }
+  .cert-image { height: 170px; }
+  .certificate-card h3 { font-size: 0.8rem; }
+  .certificate-card p { font-size: 0.7rem; }
+  .cert-btn { font-size: 0.7rem; padding: 0.3rem 0.7rem; }
+  .mySwiper { height: 370px; }
+}
+
+/* 300px – 350px */
+@media (min-width: 300px) and (max-width: 350px) {
+  .certificate-card { width: 98%; padding: 0.8rem; }
+  .cert-image { height: 200px; }
+  .certificate-card h3 { font-size: 0.9rem; }
+  .certificate-card p { font-size: 0.75rem; }
+  .cert-btn { font-size: 0.75rem; padding: 0.35rem 0.8rem; }
+  .mySwiper { height: 400px; }
+}
+
+/* 350px – 400px */
+@media (min-width: 350px) and (max-width: 400px) {
+  .certificate-card { width: 96%; padding: 1rem; }
+  .cert-image { height: 240px; }
+  .certificate-card h3 { font-size: 1rem; }
+  .certificate-card p { font-size: 0.8rem; }
+  .cert-btn { font-size: 0.8rem; padding: 0.4rem 0.9rem; }
+  .mySwiper { height: 440px; }
+}
+
+/* 400px – 450px (already exists, extending height tuning) */
+@media (min-width: 400px) and (max-width: 450px) {
+  .cert-image { height: 280px; }
+  .mySwiper { height: 480px; }
+}
+
+/* 450px – 500px */
+@media (min-width: 450px) and (max-width: 500px) {
+  .certificate-card { width: 95%; padding: 1.2rem; }
+  .cert-image { height: 300px; }
+  .certificate-card h3 { font-size: 1.1rem; }
+  .certificate-card p { font-size: 0.9rem; }
+  .cert-btn { font-size: 0.85rem; padding: 0.45rem 1rem; }
+  .mySwiper { height: 500px; }
+}
