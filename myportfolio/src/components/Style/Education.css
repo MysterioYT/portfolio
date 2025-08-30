@@ -392,3 +392,45 @@
     height: 480px;
   }
 }
+/* Ultra-small devices (200px – 300px) */
+@media (max-width: 300px) {
+  .edu-cert-section {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .main-heading {
+    font-size: clamp(1rem, 5vw, 1.3rem); /* scales automatically */
+    margin-bottom: 1rem;
+  }
+
+  .section-title {
+    font-size: clamp(0.9rem, 4.5vw, 1.1rem);
+    margin-bottom: 0.8rem;
+  }
+
+  .certificate-card {
+    width: 98%;
+    padding: 0.6rem;
+  }
+
+  .cert-image {
+    height: 180px;
+  }
+
+  .certificate-card h3 {
+    font-size: clamp(0.8rem, 4vw, 0.95rem);
+  }
+
+  .certificate-card p {
+    font-size: clamp(0.7rem, 3.5vw, 0.8rem);
+  }
+
+  .cert-btn {
+    font-size: clamp(0.7rem, 3.5vw, 0.8rem);
+    padding: 0.3rem 0.7rem;
+  }
+
+  .mySwiper {
+    height: 380px;
+  }
+}
