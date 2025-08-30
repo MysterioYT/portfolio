@@ -22,8 +22,8 @@ const Projects = () => {
       description:
         "Developed a responsive personal Portfolio Website using React, HTML, and TailwindCSS to showcase projects, skills, and certifications. Designed with modern UI/UX principles, ensuring fast performance and mobile-friendly layouts.",
       img: projectImg1,
-      codeLink: "https://github.com/",
-      liveLink: "https://your-portfolio.com",
+      codeLink: "https://github.com/MysterioYT/portfolio.git",
+      liveLink: "https://portfolio-opal-one-58.vercel.app/",
     },
     {
       id: 2,
