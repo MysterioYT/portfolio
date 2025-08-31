@@ -74,14 +74,14 @@ const Footer = () => {
           {/* Social Links */}
           <div className="footer-links">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/MysterioYT"
               target="_blank"
               rel="noopener noreferrer"
             >
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/yourlinkedin"
+              href="https://www.linkedin.com/in/arpon-sana-87218a263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank"
               rel="noopener noreferrer"
             >
