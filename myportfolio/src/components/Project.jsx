@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "../components/Style/project.css";
+import "../components/Style/Project.css";
 
 const projectImg1 =
   "https://cdn.prod.website-files.com/62c5836076839ad95e36215d/64fb2b64316862df3d2e099a_rcQYosTUaQ6hiJSAk7JphBXJCcZpPSAnq6u8U_3pnj0UVcHM5niGdGNBZ625bnZmRDTg4UQFOjd8tuczIfNSZ7JQeRBtnY4NHvGyGjRBe_DVE4QiDsVy9vcllRT7B1Ut7wx9CBDr945F26Um1hF4xM4.png";
@@ -22,8 +22,8 @@ const Projects = () => {
       description:
         "Developed a responsive personal Portfolio Website using React, HTML, and TailwindCSS to showcase projects, skills, and certifications. Designed with modern UI/UX principles, ensuring fast performance and mobile-friendly layouts.",
       img: projectImg1,
-      codeLink: "https://github.com/",
-      liveLink: "https://your-portfolio.com",
+      codeLink: "https://github.com/MysterioYT/portfolio.git",
+      liveLink: "https://portfolio-opal-one-58.vercel.app/",
     },
     {
       id: 2,
