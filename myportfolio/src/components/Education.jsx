@@ -55,7 +55,7 @@ const certificates = [
     title: "Python with Django",
     issuer: "Euphoriagenx",
     year: "2023",
-    link: "https://drive.google.com/file/d/1i6dazXjpW4aTsAeiW_g5YQxTc3fP_E23/view?usp=drive_link",
+    link: "https://drive.google.com/file/d/1sDSA_kVIxYyb0scL0W0WEQwXfKmexOjx/view?usp=sharing",
     image: cert2,
   },
   {
