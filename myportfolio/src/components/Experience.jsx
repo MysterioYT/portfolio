@@ -30,7 +30,7 @@ const Experience = () => {
             </div>
 
             <a
-              href="https://drive.google.com/file/d/1BrrHpCrvRSAHddPx1CD1-wdWo0jrG8Ut/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1c6bk-LLvciyyRo0kCX5eMEyZOdo9BhVi/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="read-more-btn"
