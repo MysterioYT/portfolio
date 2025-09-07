@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -22,7 +22,7 @@ const educationData = [
     place: "Dr. Sudhir Chandra Sur Institute Of Technology And Sports Complex",
     board: "MAKAUT UNIVERSITY",
     percentage: "7.41 CGPA",
-    link: "#",
+    message: "Currently pursuing my degree at college", // Popup message
   },
   {
     year: "2022",
@@ -89,9 +89,22 @@ const certificates = [
 ];
 
 const Education = () => {
+  const [showPopup, setShowPopup] = useState(false);
+  const [popupMessage, setPopupMessage] = useState("");
+
   useEffect(() => {
     AOS.init({ duration: 1200, once: false });
   }, []);
+
+  const handlePopup = (message) => {
+    setPopupMessage(message);
+    setShowPopup(true);
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+    setPopupMessage("");
+  };
 
   return (
     <>
@@ -128,21 +141,32 @@ const Education = () => {
                       <p className="timeline-percentage">
                         <strong>Percentage:</strong> {edu.percentage}
                       </p>
-                      <a
-                        href={edu.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="read-more-btn"
-                      >
-                        Read More →
-                      </a>
+
+                      {/* Conditional rendering for link/popup */}
+                      {edu.link ? (
+                        <a
+                          href={edu.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="read-more-btn"
+                        >
+                          Read More →
+                        </a>
+                      ) : (
+                        <button
+                          className="read-more-btn"
+                          onClick={() => handlePopup(edu.message)}
+                        >
+                          Read More →
+                        </button>
+                      )}
                     </div>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Certificates Swiper (Full box animated once) */}
+            {/* Certificates Swiper */}
             <div
               className="certificate-box"
               data-aos="fade-left"
@@ -187,6 +211,19 @@ const Education = () => {
           </div>
         </section>
       </section>
+
+      {/* Popup Modal */}
+      {showPopup && (
+        <div className="popup-overlay">
+          <div className="popup-box">
+            <h2>📘 Education Info</h2>
+            <p>{popupMessage}</p>
+            <button className="close-btn" onClick={closePopup}>
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </>
   );
 };
