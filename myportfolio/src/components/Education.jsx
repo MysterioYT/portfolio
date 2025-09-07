@@ -80,11 +80,10 @@ const certificates = [
     image: cert5,
   },
   {
-    title:
-      "CLOUD BASED FULL STACK DEVELOPMENT WITH AI ML INTEGRATION USING MERN",
+    title: "CLOUD BASED FULL STACK DEVELOPMENT WITH AI ML INTEGRATION USING MERN",
     issuer: "Ardent computech pvt ltd",
     year: "2025",
-    link: "https://drive.google.com/file/d/1BrrHpCrvRSAHddPx1CD1-wdWo0jrG8Ut/view?usp=drive_link",
+    link: "https://drive.google.com/file/d/1c6bk-LLvciyyRo0kCX5eMEyZOdo9BhVi/view?usp=sharing",
     image: cert6,
   },
 ];
