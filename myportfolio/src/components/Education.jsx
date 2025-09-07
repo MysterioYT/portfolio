@@ -30,7 +30,7 @@ const educationData = [
     place: "The Scottish Church Collegiate School",
     board: "WBCHSE",
     percentage: "68.4%",
-    link: "https://drive.google.com/file/d/1IUnW3psOS2OrUK_R9ySNSvzGoWgLt8B6/view?usp=drive_link",
+    link: "https://drive.google.com/file/d/1IUnW3psOS2OrUK_R9ySNSvzGoWgLt8B6/view?usp=sharing",
   },
   {
     year: "2020",
@@ -38,7 +38,7 @@ const educationData = [
     place: "The Scottish Church Collegiate School",
     board: "WBBSE",
     percentage: "71.57%",
-    link: "https://drive.google.com/file/d/1F6SJYwltIr77Pfr9zdTgzFYJdgPM8GHI/view?usp=drive_link",
+    link: "https://drive.google.com/file/d/1F6SJYwltIr77Pfr9zdTgzFYJdgPM8GHI/view?usp=sharing",
   },
 ];
 
@@ -69,14 +69,14 @@ const certificates = [
     title: "INTERNET OF THINGS (IOT)",
     issuer: "Ardent computech pvt ltd",
     year: "2024",
-    link: "https://drive.google.com/file/d/1Dyy6ExNCX08SoRVqRvtJlbk6qajFE4pZ/view?usp=drive_link",
+    link: "https://drive.google.com/file/d/1ZuLf6dCZNUnlcXVqe5UWtKaDz5_3BIPq/view?usp=sharing",
     image: cert4,
   },
   {
     title: "FULL STACK WEB DEVELOPMENT",
     issuer: "Ardent computech pvt ltd",
     year: "2025",
-    link: "https://drive.google.com/file/d/1nXKaIJGjK150RSXCQikev4Sau0B4i9rd/view?usp=drive_link",
+    link: "https://drive.google.com/file/d/1pmEFmg4_BJw8mAtQy57JHCcmGIQVhXXC/view?usp=sharing",
     image: cert5,
   },
   {
