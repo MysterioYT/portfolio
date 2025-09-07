@@ -77,7 +77,7 @@ const About = () => {
           </ul>
 
           <a
-            href="https://drive.google.com/file/d/1N8TWpakK1iPBp9P-5cRcilHxVx1DJfOj/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1rLcOFw1ehZTYOLCi0-kDZ_4KM8LJi2uE/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="linkedin-btn"
